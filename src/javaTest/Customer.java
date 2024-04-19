@@ -13,7 +13,7 @@ public class Customer extends User {
 	}
 
 	public Customer() {
-		
+		super();
 	}
 	
 	public Customer(String id, String pw, String name, int point) {
@@ -23,7 +23,7 @@ public class Customer extends User {
 
 	@Override
 	public String toString() {
-		return "아이디:" + getId() + "\t비번:" + getPw() + "\t이름:" + getName() + "\t포인트:" + point;
+		return super.toString() + "\t포인트:" + point;
 	}
 	
 	@Override

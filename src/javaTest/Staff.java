@@ -5,7 +5,7 @@ public class Staff extends User {
 	private int salary;
 
 	public Staff() {
-		
+		super();
 	}
 	
 	public Staff(String id, String pw, String name, int salary) {
@@ -23,7 +23,7 @@ public class Staff extends User {
 
 	@Override
 	public String toString() {
-		return "아이디:" + getId() + "\t비번:" + getPw() + "\t이름:" + getName() + "\t월급:" + salary;
+		return super.toString() + "\t월급:" + salary;
 	}
 	
 	public void showInfo() {

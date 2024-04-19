@@ -1,10 +1,13 @@
 package javaTest;
 
+//	User 클래스는 추상 클래스로 정의.
 public abstract class User {
 
-	private String id;
-	private String pw;
-	private String name;
+	// User 클래스의 필드에 대한 접근 제어자는 
+	// 자식 클래스(Customer, Staff)에서 직접 접근할 수 있도록
+	protected String id;
+	protected String pw;
+	protected String name;
 	
 	public User() {
 		
