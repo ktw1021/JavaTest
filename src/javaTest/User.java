@@ -39,7 +39,7 @@ public abstract class User {
 	
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", pw=" + pw + ", name=" + name + "]";
+		return "아이디:" + getId() + "\t비번:" + getPw() + "\t이름:" + getName();
 	}
 
 	public abstract void showInfo();

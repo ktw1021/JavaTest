@@ -17,10 +17,10 @@ public class UserApp {
 		cs2.setName("이효리");	cs2.setId("LeeHR"); 	cs2.setPw("a123!!");		cs2.setPoint(2500);
 		cs3.setName("박명수");	cs3.setId("ms-park");	cs3.setPw("y2345");			cs3.setPoint(1200);
 		
-		System.out.println("--------------------------회원+운영자 전체리스트--------------------------");
+		System.out.println("----------------------회원+운영자 전체리스트----------------------");
 		
 		// - 1개의 ArrayList를 사용하여 Customer와 Staff를 모두 관리하세요.
-		List <User> userlist = new ArrayList();
+		List <User> userlist = new ArrayList<User>();
 		userlist.add(admin);	userlist.add(cs1);
 		userlist.add(cs2);		userlist.add(cs3);
 		
